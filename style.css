@@ -43,8 +43,21 @@ body {
     overflow-x: auto;
 }
 
-/* Custom Scrollbar */
+/* Buttons */
+.calculator-buttons {
+    padding: 10px;
 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.equal-sign {
+    grid-column: -2;
+    grid-row: 2 / span 4;
+}
+
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -62,3 +75,4 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
